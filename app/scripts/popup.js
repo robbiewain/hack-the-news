@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		$('#title').text(item.title).attr('href', item.url);
 		$('#site').text('(' + getHostnameFromURL(item.url) + ')');
 		$('#points').text(item.score + ' points');
-		$('#user').text(item.by).attr('href', 'https://news.ycombinator.com/user?id=' + item.id);
+		$('#user').text(item.by).attr('href', 'https://news.ycombinator.com/user?id=' + item.by);
 
 		var discussURL = 'https://news.ycombinator.com/item?id=' + item.id;
 		$('#timestamp').text(moment(item.time*1000).fromNow()).attr('href', discussURL);
