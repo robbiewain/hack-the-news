@@ -1,0 +1,10 @@
+{
+  "name": "hack-the-news",
+  "version": "0.0.0",
+  "dependencies": {
+    "firebase": "~2.2.7",
+    "jquery": "~2.1.4",
+    "moment": "~2.10.3"
+  },
+  "devDependencies": {}
+}
