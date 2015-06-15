@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	if (item) {
 		$('#title').text(item.title).attr('href', item.url);
-		$('#site').text('(' + getHostnameFromURL(item.url) + ')');
+		if (item.url) {
+			$('#site').text('(' + getHostnameFromURL(item.url) + ')');
+		}
 		$('#points').text(item.score + ' points');
 		$('#user').text(item.by).attr('href', 'https://news.ycombinator.com/user?id=' + item.by);
 
