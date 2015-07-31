@@ -7,6 +7,10 @@ body {
   margin: 20px;
 }
 
+ol {
+  padding-left: 20px;
+}
+
 p {
 	margin-bottom: 5px;
 }
@@ -35,6 +39,10 @@ small a:visited {
 	text-decoration: none;
 }
 
-#site {
+.site {
 	font-size: 8pt;
+}
+
+.more {
+  text-align: right;
 }

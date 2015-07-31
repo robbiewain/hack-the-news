@@ -11,23 +11,14 @@
     <!-- endbuild -->
   </head>
   <body tabindex="1">
-    <p>
-      <a id="title" href="#" target="_blank"></a> <span id="site"></span>
-    </p>
-
-    <small>
-      <span id="points"></span> by <a id="user" href="#" target="_blank"></a> | <a id="timestamp" href="#" target="_blank"></a> | <a id="discuss" href="#" target="_blank">Discuss</a> | <a id="comments" href="#" target="_blank"></a>
-    </small>
+    <div id="stories"></div>
 
     <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/firebase/firebase.js"></script>
-    <script src="bower_components/moment/moment.js"></script>
-    <!-- endbower -->
+    <script src="bower_components/react/react.js"></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/popup.js -->
+    <script src="scripts/stories.js"></script>
     <script src="scripts/popup.js"></script>
     <!-- endbuild -->
   </body>

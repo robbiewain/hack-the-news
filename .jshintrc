@@ -23,6 +23,13 @@
     "crypto": true,
     "$": true,
     "Firebase": true,
-    "moment": true
+    "moment": true,
+    "Handlebars": true,
+    "describe": true,
+    "it": true,
+    "expect": true,
+    "before": true,
+    "React": true,
+    "StoryList": true
   }
 }
