@@ -1,0 +1,12 @@
+<div>
+  <ol>
+    {{#each visibleStories key="@index" as |story|}}
+      <top-story @story={{story}} />
+    {{/each}}
+  </ol>
+  {{#unless expanded}}
+    <p class="more">
+      <a href="#" onclick={{action showMore}}>More</a>
+    </p>
+  {{/unless}}
+</div>
