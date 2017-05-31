@@ -1,6 +1,6 @@
 <div>
   <ol>
-    {{#each visibleStories key="@index" as |story|}}
+    {{#each visibleStories key="id" as |story|}}
       <top-story @story={{story}} />
     {{/each}}
   </ol>
