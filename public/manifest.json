@@ -1,6 +1,6 @@
 {
   "name": "Hack the News",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "manifest_version": 2,
   "description": "A Hacker News icon that notifies you when the top story changes.",
   "content_security_policy": "script-src 'self' https://*.firebaseio.com; object-src 'self'",
