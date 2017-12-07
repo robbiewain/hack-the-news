@@ -3,7 +3,7 @@ import Component, { tracked } from '@glimmer/component';
 export default class TopStories extends Component {
   args: {
     stories: any[]
-  }
+  };
 
   @tracked expanded: boolean = false;
 
@@ -16,4 +16,3 @@ export default class TopStories extends Component {
     this.expanded = true;
   }
 }
-

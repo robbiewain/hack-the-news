@@ -1,5 +1,5 @@
-import App from './main';
 import { ComponentManager, setPropertyDidChange } from '@glimmer/component';
+import App from './main';
 import Background from './utils/background';
 
 const app = new App();
@@ -16,7 +16,7 @@ if (containerElement) {
     }
   });
 
-  app.renderComponent('hack-the-news', containerElement, null);
+  app.renderComponent('HackTheNews', containerElement, null);
 
   app.boot();
 } else {

@@ -3,7 +3,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'hack-the-news',
-    environment: environment
+    environment
   };
 
   return ENV;

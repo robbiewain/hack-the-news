@@ -1,7 +1,7 @@
 import Firebase from 'firebase';
+import { switchIconOn } from './icon-switcher';
 import Story from './story';
 import StoryStore from './story-store';
-import { switchIconOn } from './icon-switcher';
 
 const NUM_STORIES = 5;
 
@@ -11,7 +11,7 @@ export default class Background {
   private stories: {};
   private store = new StoryStore();
 
-  private firebase: Firebase = 
+  private firebase: Firebase =
     new Firebase('https://hacker-news.firebaseio.com/v0/');
 
   constructor() {

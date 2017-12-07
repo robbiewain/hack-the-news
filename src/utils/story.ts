@@ -1,6 +1,6 @@
-import { tracked } from "@glimmer/component";
-import { distanceInWordsToNow } from 'date-fns';
-import { HackerNewsItem } from './hacker-news-item';
+import { tracked } from '@glimmer/component';
+import { formatDistanceStrict } from 'date-fns';
+import { IHackerNewsItem } from './hacker-news-item';
 
 export default class Story {
   id: number;
@@ -14,7 +14,7 @@ export default class Story {
   timestamp: string;
   comments: number;
 
-  constructor(item: HackerNewsItem) {
+  constructor(item: IHackerNewsItem) {
     let hnURL = 'https://news.ycombinator.com/';
     let discussUrl = hnURL + 'item?id=' + item.id;
     let url = item.url ? item.url : discussUrl;
@@ -27,11 +27,11 @@ export default class Story {
     this.userUrl = hnURL + 'user?id=' + item.by;
     this.userName = item.by;
     this.discussUrl = discussUrl;
-    this.timestamp = distanceInWordsToNow(item.time*1000);
+    this.timestamp = formatDistanceStrict(item.time * 1000, new Date(), { addSuffix: true });
     this.comments = item.descendants;
   }
 
-  _getHostname(url) {
+  private _getHostname(url) {
     let a = document.createElement('a');
     a.href = url;
     return a.hostname;

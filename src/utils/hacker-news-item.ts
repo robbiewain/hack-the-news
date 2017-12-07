@@ -1,4 +1,4 @@
-export interface HackerNewsItem {
+export interface IHackerNewsItem {
   id: number;
   deleted: boolean;
   type: string;

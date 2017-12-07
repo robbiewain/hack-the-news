@@ -1,7 +1,7 @@
 <div>
   <ol>
     {{#each visibleStories key="id" as |story|}}
-      <top-story @story={{story}} />
+      <TopStory @story={{story}} />
     {{/each}}
   </ol>
   {{#unless expanded}}

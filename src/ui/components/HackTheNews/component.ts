@@ -2,7 +2,7 @@ import Component, { tracked } from '@glimmer/component';
 import { switchIconOff } from '../../../utils/icon-switcher';
 import StoryStore from '../../../utils/story-store';
 
-export default class TopStories extends Component {
+export default class HackTheNews extends Component {
   @tracked stories: any[] = [];
 
   constructor(options) {
