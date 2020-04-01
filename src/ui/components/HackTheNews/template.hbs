@@ -1,5 +1,9 @@
 <div>
   <!-- Empty link to avoid Chrome auto focusing first link -->
   <a href="#"></a>
-  <TopStories @stories={{stories}} />
+  <ol>
+    {{#each stories key="id" as |story|}}
+      <TopStory @story={{story}} />
+    {{/each}}
+  </ol>
 </div>
